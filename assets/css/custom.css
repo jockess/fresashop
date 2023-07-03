@@ -1,0 +1,129 @@
+.appHeader .pageTitle .logo {
+    max-height: 50px;
+    height: 50px;
+}
+.bg-primary {
+    background: #ff7271 !important;
+    color: #FFF;
+}
+.btn-primary {
+    background: #ff7271 !important;
+    border-color: #ff7271 !important;
+    color: #ffffff !important;
+}
+.section.full .section-title-fresa {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.section-title-fresa {
+    font-size: 15px;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    color: #141515;
+    font-weight: 500;
+}
+.action-buttonf .btn{
+    height: auto;
+}
+.section-title-fresa i{
+    font-size: 25px;
+}
+a {
+    color: #141515;
+}
+.p-color{
+    color: #fe6d6d;
+}
+.s-color{
+    color: #71c362;
+}
+.table .edit-product{
+    font-size: 20px; 
+}
+.table.fresa td{
+    vertical-align: middle;
+}
+.FresaHome .btnFresa{
+    padding: 7px 10px;
+    height: auto;
+    border: 1px solid #d8d8d8;
+    background-color: #FFF;
+}
+.FresaHome .btnFresa:active, .FresaHome .btnFresa:focus{
+    color: #212529;
+}
+.FresaHome .btnFresa i.bi{
+    font-size: 25px;
+    margin-right: 0;
+    margin-top: 0;
+}
+.btnFresaTxt{
+    font-size: 12px;
+    font-weight: normal;
+}
+.appHeader {
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #FFF;
+    color: #141515;
+    box-shadow: none;
+    border-bottom: 1px solid #d8d8d8;
+}
+.searchBoxElement{
+	background-color: white;
+	border: 1px solid #aaa;
+	position: absolute;
+	max-height: 114px;
+	overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  list-style: none;
+  z-index: 1;
+  -ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.searchBoxElement span{
+  padding: 0 5px;
+}
+.searchBoxElement::-webkit-scrollbar {
+  display:none;
+}
+.searchBoxElement li{
+	background-color: white;
+	color: black;
+}
+.searchBoxElement li:hover{
+	background-color: #50a0ff;
+	color: white;
+}
+.searchBoxElement li.selected{
+	background-color: #50a0ff;
+	color: white;
+}
+.refineText{
+	background: #fff;
+    box-shadow: none;
+    height: 42px;
+    border-radius: 6px;
+    padding: 0 40px 0 16px;
+    border-color: #E1E1E1;
+    border: 1px solid #E1E1E1;
+}
+.appHeader .left {
+    left: 8px;
+    top: auto;
+}
+.appHeader .right {
+    right: 8px;
+    top: auto;
+}
