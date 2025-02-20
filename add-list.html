@@ -1,0 +1,212 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="chunks/images/favicon.ico">
+
+    <title>Agregar lista - Fresa Shop</title>
+    <!-- Bootstrap core CSS -->
+    <link href="chunks/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Tables core CSS -->
+    <link href="chunks/tabulator-master/dist/css/tabulator_semanticui.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="chunks/icons/fresaicons/style.css" rel="stylesheet">
+    <link href="chunks/css/stylesfresa.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 ps-3 mr-0" href="#"><img src="chunks/images/Logo.png"></a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <div class="nav-link-user">
+            <div class="gravatar me-2">J</div>
+            <div class="name me-2">Jesse Reyes</div>
+            <div class="dropdown">
+              <a href="#" class="menuburger"><span class="icon-menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+          <div class="sidebar-sticky">
+            <div id='menu'></div>
+          </div>
+        </nav>
+
+        <main role="main" class="col p-0">
+          <div class="container-fluid h-100">
+            <div class="row align-items-stretch h-100">
+                <div class="add-wrap pt-4 px-4">
+                    <div class="main-title">
+                        <div class="main-icon"><span class="icon-lista_compras"></span></div>
+                        <div class="main-text ms-2">Listas de compras</div>
+                    </div>
+                    <div class="row g-2 pb-2">
+                        <div class="col-2">
+                            <label for="filter-ciclo" class="form-label pe-2">Ciclo</label>
+                                <select id="filter-ciclo" class="form-select">
+                                  <option value="0"></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="filter-mes" class="form-label pe-2">Mes</label>
+                                <select id="filter-mes" class="form-select">
+                                    <option value="0"></option>
+                                  <option value="1">Enero</option>
+                                  <option value="2">Febrero</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="filter-canal" class="form-label pe-2">Canal</label>
+                                <select id="filter-canal" class="form-select">
+                                    <option value="0"></option>
+                                  <option value="1">Monterrey</option>
+                                  <option value="2">Torreon</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row g-2 pb-2">
+                        <div class="col">
+                            <label for="filter-ubi" class="form-label pe-2">Ubicacion</label>
+                            <input id="filter-ubi" type="text" class="form-control" >
+                        </div>
+                        <div class="col">
+                            <label for="filter-date" class="form-label pe-2">Fecha de compra</label>
+                            <div class="form-icon">
+                                <input type="text" id="filter-date" class="form-control">
+                                <span class="input-icon icon-calendario"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <div class="main-title">
+                                <div class="sub-text">Agregar producto</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card pb-2 mb-3">
+                        <div class="row">
+                            <div class="col-12 pb-2">
+                                <label for="filter-store" class="form-label pe-2">Tienda</label>
+                                <input id="filter-store" type="text" class="form-control" >
+                            </div>
+                            <div class="col-12 pb-2">
+                                <label for="filter-client" class="form-label pe-2">Buscar cliente</label>
+                                <div class="form-icon">
+                                    <input type="text" id="filter-client" class="form-control">
+                                    <span class="input-icon icon-buscar"></span>
+                                </div>
+                            </div>
+                            <div class="col-12 pb-2">
+                                <label for="filter-product" class="form-label pe-2">Producto</label>
+                                <input id="filter-product" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-card pb-2 mb-3">
+                        <div class="row pb-2">
+                            <div class="col">
+                                <label for="filter-price" class="form-label pe-2">Precio MXN</label>
+                                <input id="filter-price" type="text" class="form-control">
+                            </div>
+                            <div class="col">
+                                <label for="filter-qty" class="form-label pe-2">Cantidad</label>
+                                <input id="filter-qty" type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-5">
+                            <div class="d-flex align-items-center">
+                                <div class="form-label">Tanda</div>
+                                <label class="switch" for="tanda">
+                                    <input type="checkbox" id="tanda">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center">
+                                <div class="form-label">Cliente nuevo</div>
+                                <label class="switch" for="new-client">
+                                    <input type="checkbox" id="new-client">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-grid">
+                            <button type="button" class="btn btn-secondary btn-lg">Agregar Producto</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-wrap col pt-4 px-4 bg-white">
+                    <div class="main-title">
+                        <div class="main-text">Listas de articulos</div>
+                    </div>
+                    <form action="index.html" class="list-shop">
+                      <div class="wrap-shop d-flex flex-column">
+                        <div class="header-shop pb-1">
+                          <div class="row g-2">
+                            <div class="col-2">Tienda</div>
+                            <div class="col">Cliente</div>
+                            <div class="col-6">Producto</div>
+                            <div class="col-2">Total</div>
+                          </div>
+                        </div>
+                        <div class="content-shop">
+                          <div id="artList">
+
+                          </div>
+                        </div>
+                        <div class="footer-shop mt-auto">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <div>Articulos: <span>3</span></div>
+                            <div>Total: <span>$47,500</span></div>
+                          </div>
+                          <div class="d-flex pt-3 justify-content-end g-2 buttons">
+                            <button type="submit"  formaction="index.html" class="btn btn-outline-dark btn-lg">Cancelar</button>
+                            <button type="submit" formaction="index.html" class="btn btn-secondary btn-lg">Guardar Lista</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $( "#menu" ).load( "/menu.html" );
+      $( "#artList" ).load( "/art-list.html" );
+    </script>
+  </body>
+</html>

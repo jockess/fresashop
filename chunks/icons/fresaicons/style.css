@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'fresaicon';
+  src:  url('fonts/fresaicon.eot?cqidla');
+  src:  url('fonts/fresaicon.eot?cqidla#iefix') format('embedded-opentype'),
+    url('fonts/fresaicon.ttf?cqidla') format('truetype'),
+    url('fonts/fresaicon.woff?cqidla') format('woff'),
+    url('fonts/fresaicon.svg?cqidla#fresaicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fresaicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-buscar:before {
+  content: "\e900";
+}
+.icon-calendario:before {
+  content: "\e901";
+}
+.icon-cancelada:before {
+  content: "\e902";
+}
+.icon-clientes:before {
+  content: "\e903";
+}
+.icon-desgloses:before {
+  content: "\e904";
+}
+.icon-dinero:before {
+  content: "\e905";
+}
+.icon-disponibles:before {
+  content: "\e906";
+}
+.icon-down:before {
+  content: "\e907";
+}
+.icon-editar:before {
+  content: "\e908";
+}
+.icon-envios:before {
+  content: "\e909";
+}
+.icon-lista_compras:before {
+  content: "\e90a";
+}
+.icon-menu:before {
+  content: "\e90b";
+}
+.icon-menu_puntos:before {
+  content: "\e90c";
+}
+.icon-notas:before {
+  content: "\e90d";
+}
+.icon-pagos:before {
+  content: "\e90e";
+}
+.icon-pdf:before {
+  content: "\e90f";
+}
+.icon-warning:before {
+  content: "\e910";
+}
+.icon-activa:before {
+  content: "\e911";
+}
+.icon-agrear_cliente:before {
+  content: "\e912";
+}
+.icon-agregar:before {
+  content: "\e913";
+}
+.icon-agregar_lista:before {
+  content: "\e914";
+}
+.icon-borrar:before {
+  content: "\e915";
+}
