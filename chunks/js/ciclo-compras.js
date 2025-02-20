@@ -1,6 +1,6 @@
 //Build Tabulator
 var table = new Tabulator("#lista-compras-table", {
-    ajaxURL:"./chunks/js/ciclo-compras.json",
+    ajaxURL:"chunks/js/ciclo-compras.json",
     pagination:"local",
     paginationSize:10,
     paginationSizeSelector:[10, 15, 20, 25],
