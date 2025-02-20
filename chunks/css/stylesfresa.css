@@ -289,6 +289,9 @@
     border-bottom: 1px solid var(--lineColor);
     color: inherit;
   } 
+  .shop-list .tabulator .tabulator-header, .shop-list .tabulator .tabulator-header .tabulator-col, .shop-list .tabulator .tabulator-footer {
+    background-color: var(--witheColor);
+  } 
   .tabulator .tabulator-header .tabulator-col{
     background-color: var(--bodyColor);
   }
