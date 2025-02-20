@@ -281,6 +281,7 @@
     background-color: #fff;
     border: 1px solid var(--lineColor);
     border-radius: 15px;
+    margin: 0;
   }
 
   .tabulator .tabulator-header {
@@ -394,6 +395,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--witheColor);
 }
 .btn.btn-outline-primary .btn-icon{
   line-height: 0;

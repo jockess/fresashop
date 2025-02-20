@@ -1,8 +1,6 @@
-
-
 //Build Tabulator
 var table = new Tabulator("#lista-compras-table", {
-    ajaxURL:"/chunks/js/lista-compras.json",
+    ajaxURL:"./chunks/js/ciclo-compras.json",
     pagination:"local",
     paginationSize:10,
     paginationSizeSelector:[10, 15, 20, 25],
@@ -18,7 +16,4 @@ var table = new Tabulator("#lista-compras-table", {
     {title:"Ubicacion", field:"ubicacion", hozAlign:"left", widthGrow:1},
     {title:"Canal", field:"canal", hozAlign:"left", widthGrow:1},
     ],
-});
-table.on("rowClick", function(e, row){
-    window.location.href = "/shop-list.html";
 });

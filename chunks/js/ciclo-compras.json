@@ -1,0 +1,23 @@
+[
+    {"id":"1", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"31", "total":"$45,780", "ubicacion":"Dallas, TX", "canal":"Monterrey","estado":"Compras en curso","acciones":""},
+    {"id":"2", "ciclo":"2", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Enviado a Mty","acciones":""},
+    {"id":"3", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Proceso de envío","acciones":""},
+    {"id":"4", "ciclo":"3", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"5", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"6", "ciclo":"1", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"7", "ciclo":"1", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"8", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"9", "ciclo":"2", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"10", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"11", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"12", "ciclo":"1", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"13", "ciclo":"3", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"14", "ciclo":"4", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"15", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"16", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"17", "ciclo":"4", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"18", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"19", "ciclo":"1", "mes":"Febrero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"20", "ciclo":"2", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""},
+    {"id":"21", "ciclo":"1", "mes":"Enero", "fecha":"12/01/2025", "articulos":"30", "total":"$89,390", "ubicacion":"Mcallen, TX", "canal":"Torreon","estado":"Compras en curso","acciones":""}
+    ]
