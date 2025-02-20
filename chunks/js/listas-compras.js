@@ -2,7 +2,7 @@
 
 //Build Tabulator
 var table = new Tabulator("#lista-compras-table", {
-    ajaxURL:"http://localhost/chunks/js/lista-compras.json",
+    ajaxURL:"https://jockess.github.io/fresashop/chunks/js/lista-compras.json",
     pagination:"local",
     paginationSize:10,
     paginationSizeSelector:[10, 15, 20, 25],
@@ -35,5 +35,5 @@ var table = new Tabulator("#lista-compras-table", {
     ],
 });
 table.on("rowClick", function(e, row){
-    window.location.href = "http://localhost/shop-list.html";
+    window.location.href = "https://jockess.github.io/fresashop/shop-list.html";
 });
