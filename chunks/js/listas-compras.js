@@ -20,5 +20,5 @@ var table = new Tabulator("#lista-compras-table", {
     ],
 });
 table.on("rowClick", function(e, row){
-    window.location.href = "/shop-list.html";
+    window.location.href = "shop-list.html";
 });
