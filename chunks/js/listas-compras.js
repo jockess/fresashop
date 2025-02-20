@@ -17,6 +17,21 @@ var table = new Tabulator("#lista-compras-table", {
     {title:"Total", field:"total", widthGrow:1},
     {title:"Ubicacion", field:"ubicacion", hozAlign:"left", widthGrow:1},
     {title:"Canal", field:"canal", hozAlign:"left", widthGrow:1},
+    {title:"Estado", field:"estado", hozAlign:"left", widthGrow:1, formatter:function(cell, formatterParams){
+        var value = cell.getValue();
+         if(value.indexOf("Compras") !== -1){
+             return "<span class='badge text-bg-success'>" + value + "</span>";
+         }
+         if(value.indexOf("Enviado") !== -1){
+             return "<span class='badge text-bg-send'>" + value + "</span>";
+         }
+         if(value.indexOf("Proceso") !== -1){
+            return "<span class='badge text-bg-process'>" + value + "</span>";
+        }
+         else{
+             return value;
+         }
+     }},
     ],
 });
 table.on("rowClick", function(e, row){
