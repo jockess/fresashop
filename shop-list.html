@@ -47,33 +47,105 @@
           </div>
         </nav>
 
-        <main role="main" class="shop-list col p-0">
-          <div class="container-fluid px-0 h-100">
-            <div class="wrapper ps-4 pe-2 pt-4 pb-4">
-              <div class="main-title">
-                <div class="main-icon"><span class="icon-lista_compras"></span></div>
-                <div class="main-text ms-2">Listas de compras</div>
-              </div>
-              <div class="row g-2">
-                <div class="col">
-                  <div id="lista-compras-table"></div>
+        <main role="main" class="shop-list col">
+          <div class="row ps-4 pe-2 pt-4 pb-4">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+              <div class="main-title ">
+                <a href="index.html" class="btn btn-back btn-outline-primary d-flex align-items-center justify-content-center">
+                  <span class="icon-down"></span>
+                </a>
+                <div class="main-text ms-2 d-flex align-items-center">
+                  <div class="pe-3">Listas de compras</div>
+                  <div class="data-text"><span class="pe-2 border-end">Ciclo 1</span><span class="ps-2">Enero</span></div>
                 </div>
-                <div class="col-2">
-                  <div class="d-grid">
-                    <a href="/add-list.html" class="btn btn-lg btn-outline-primary d-flex align-items-center justify-content-center">
+              </div>
+              <div class="action-menu d-flex flex-row gap-2">
+                <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                  <span class="me-2">Más acciones</span>
+                  <span class="btn-icon icon-down"></span>
+                </a>
+                <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                  <span class="me-2">Agreagar nota</span>
+                  <span class="btn-icon icon-notas"></span>
+                </a>
+                <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                  <span class="me-2">Eliminar lista</span>
+                  <span class="btn-icon icon-borrar"></span>
+                </a>
+              </div>
+            </div>
+            <div class="row gx-2 gy-0">
+              <div class="col-10">
+                <div id="lista-compras-table"></div>
+              </div>
+              <div class="col-2">
+                <div class="side-grid">
+                  <div class="d-grid pb-2">
+                    <a href="add-list.html" class="btn btn-lg btn-outline-primary d-flex align-items-center justify-content-center">
                       <span class="me-2">Agregar producto</span>
-                      <span class="btn-icon icon-agregar"></span>
+                      <span class="btn-icon pinkColor icon-agregar"></span>
                     </a>
+                  </div>
+                  <div class="grid-card-side mb-2">
+                    <div class="d-flex p-3 justify-content-between border-bottom">
+                      <span class="title">Estado</span>
+                      <span class="badge text-bg-success">Activa</span>
+                    </div>
+                    <div class="d-flex p-3 justify-content-between">
+                      <span class="title-b">Total:</span>
+                      <span class="text">$43,670</span>
+                    </div>
+                  </div>
+                  <div class="grid-card-side">
+                    <div class="p-3 border-bottom">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <span class="title pe-2">Ciclo:</span> <span class="text">1</span>
+                        </div>
+                        <div>
+                          <span class="title pe-2">Mes:</span> <span class="text">Enero</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex p-3 justify-content-between border-bottom">
+                      <span class="title">Articulos</span>
+                      <span class="text">40</span>
+                    </div>
+                    <div class="d-flex p-3 justify-content-between border-bottom">
+                      <span class="title">Fecha</span>
+                      <span class="text">12/01/2025</span>
+                    </div>
+                    <div class="d-flex p-3 justify-content-between border-bottom">
+                      <span class="title">Canal</span>
+                      <span class="text">Monterrey</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </main>
       </div>
     </div>
-
+<!-- Modal -->
+<!-- Modal editar compra -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar compra</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-shoplist"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-dark">Cancelar</button>
+        <button type="submit" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -84,6 +156,7 @@
     <script type="text/javascript" src="chunks/js/ciclo-compras.js"></script>
     <script type="text/javascript">
       $( "#menu" ).load( "menu.html" );
+      $( "#modal-shoplist" ).load( "modal-shoplist.html" );
     </script>
   </body>
 </html>

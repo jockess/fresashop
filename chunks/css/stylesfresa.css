@@ -187,15 +187,24 @@
     font-weight: 500;
     color: var(--titleColor);
    }
+   .main-title .data-text{
+    font-size: 14px;
+    color: var(--pinkColor);
+   }
    .grid-card{
     background-color: var(--witheColor);
     border: 1px solid var(--lineColor);
     padding: 20px;
     border-radius: 10px;
    }
-  .list-wrap {
+   .grid-card-side{
+    background-color: var(--witheColor);
+    border: 1px solid var(--lineColor);
+    border-radius: 10px;
+   }
+  /*.list-wrap {
     padding-right: 20px!important;
-  }
+  }*/
    .header-shop{
     font-size: 14px;
     font-weight: 600;
@@ -274,9 +283,32 @@
    .footer-shop .buttons{
     gap: .5rem
    }
+   .border-end{
+    border-right: 1px solid var(--lineColor)!important;
+   }
+   .border-bottom{
+    border-bottom: 1px solid var(--lineColor)!important;
+   }
+   
+   .side-grid .title{
+    font-weight: 600;
+    color: var(--pinkColor);
+   }
+   .side-grid .title-b{
+    font-weight: 600;
+   }
+   .side-grid .badge {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
   /*
    * Utilities
    */
+   .modal-body {
+    background-color: var(--bodyColor);
+}
   .tabulator {
     background-color: #fff;
     border: 1px solid var(--lineColor);
@@ -341,6 +373,9 @@
   color: var(--badgeTextProcess) !important;
   background-color: var(--badgeProcess) !important;
 }
+.pinkColor{
+  color: var(--pinkColor)!important;
+}
 /*
    * Forms
 */
@@ -390,6 +425,11 @@
   font-size: 25px;
   color: var(--lineColor);
 }
+.btn.btn-lg{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .btn.btn-outline-primary{
   border-color: var(--lineColor);
   font-size: 14px;
@@ -403,7 +443,7 @@
 .btn.btn-outline-primary .btn-icon{
   line-height: 0;
   font-size: 20px;
-  color: var(--pinkColor);
+  color: var(--bodyTextColor);
   transition: color 0.15sease-in-out, background-color 0.15sease-in-out, border-color 0.15sease-in-out, box-shadow 0.15sease-in-out;
 }
 .btn.btn-outline-primary:hover {
@@ -412,8 +452,17 @@
   border-color: var(--pinkColor);
 }
 .btn.btn-outline-primary:hover .btn-icon{
-  color: var(--witheColor);
+  color: var(--witheColor)!important;
   
+}
+.btn.btn-back{
+  font-size: 30px;
+  padding: 3px;
+  line-height: 0;
+  color: var(--bodyTextColor);
+}
+.btn.btn-back span{
+  rotate: 90deg;
 }
 .btn.btn-outline-dark{
   border:2px solid;
@@ -435,6 +484,12 @@
 .btn-secondary:hover{
   background-color: var(--greenHoverColor);
   border-color: var(--greenHoverColor);
+}
+.action-menu  .btn.btn-outline-primary{
+  font-weight: 400;
+}
+.action-menu  .btn.btn-outline-primary .btn-icon{
+  font-size: 20px;
 }
 /* The switch - the box around the slider */
 .switch {
