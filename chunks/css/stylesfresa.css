@@ -474,6 +474,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.btn.btn-outline-dark:hover{
+  color: var(--witheColor);
+}
 .btn-secondary{
   font-size: 15px;
   font-weight: 500;
