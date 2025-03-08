@@ -24,6 +24,8 @@
     --badgeTextSend:#A68811;
     --badgeProcess:#FFDFBD;
     --badgeTextProcess:#D07312;
+    --badgeDebt:#FCE7F3;
+    --badgeTextDebt:#9D174D;
     --black-rgb: 11, 20, 26;
   }
   * {
@@ -35,6 +37,9 @@
     font-size: .875rem;
     color: var(--bodyTextColor);
     background-color: var(--bodyColor);
+  }
+  a{
+    text-decoration: none;
   }
   .feather {
     width: 16px;
@@ -108,6 +113,10 @@
     display: flex;
     align-items: center;
     font-size: 1rem;
+  }
+  .navbar-brand img{
+    height: 65px;
+    width: auto;
   }
   .nav-link{
     display: flex;
@@ -327,7 +336,7 @@
   .tabulator .tabulator-header .tabulator-col{
     background-color: var(--bodyColor);
   }
-  .tabulator .tabulator-header .tabulator-col.tabulator-sortable .tabulator-col-title {
+  .tabulator .tabulator-header .tabulator-col.tabulator-sortable .tabulator-col-title,.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
     padding-right: 10px;
     font-size: 14px;
     font-weight: 600;
@@ -361,6 +370,24 @@
   font-weight: 500;
   padding: 5px 10px;
  }
+ .tabulator .tabulator-footer .tabulator-page {
+  background: var(--witheColor);
+  border: 1px solid var(--greenColor);
+  color: var(--bodyTextColor);
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 2px 5px;
+}
+.tabulator .tabulator-footer .tabulator-page:not(disabled):hover{
+  background: var(--greenHoverColor);
+  border-color: var(--greenHoverColor);
+}
+.tabulator .tabulator-footer .tabulator-page.active{
+  background: var(--greenColor);
+  border-color: var(--greenColor);
+  color: var(--witheColor);
+}
  .text-bg-success {
   color: var(--badgeTextSucces) !important;
   background-color: var(--badgeSucces) !important;
@@ -372,6 +399,10 @@
 .text-bg-process{
   color: var(--badgeTextProcess) !important;
   background-color: var(--badgeProcess) !important;
+}
+.text-bg-debt{
+  color: var(--badgeTextDebt) !important;
+  background-color: var(--badgeDebt) !important;
 }
 .pinkColor{
   color: var(--pinkColor)!important;
@@ -493,6 +524,49 @@
 }
 .action-menu  .btn.btn-outline-primary .btn-icon{
   font-size: 20px;
+}
+.btn-165 {
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: none;
+  gap: 10px;
+  color: #414141;
+  background: #F2F2F2;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+}
+
+.btn-165 svg {
+  height: 24px;
+}
+
+.btn-165:hover {
+  border: none;
+  background: #dadada;
+}
+
+.btn-165:active {
+  margin-top: 0px;
+}
+
+/*** disabled style ***/
+.btn-165:disabled {
+  pointer-events: none;
+  opacity: .65;
+  color: #7e7e7e;
+  background: #dcdcdc;
+  box-shadow: none;
+  text-shadow: none;
 }
 /* The switch - the box around the slider */
 .switch {
