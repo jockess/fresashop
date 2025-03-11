@@ -61,17 +61,21 @@
               </div>
               <div class="action-menu d-flex flex-row gap-2">
                 <a href="#" class="btn btn-outline-primary d-flex align-items-center">
-                  <span class="me-2">Más acciones</span>
-                  <span class="btn-icon icon-down"></span>
-                </a>
-                <a href="#" class="btn btn-outline-primary d-flex align-items-center">
                   <span class="me-2">Agreagar nota</span>
                   <span class="btn-icon icon-notas"></span>
                 </a>
-                <a href="#" class="btn btn-outline-primary d-flex align-items-center">
-                  <span class="me-2">Eliminar lista</span>
-                  <span class="btn-icon icon-borrar"></span>
-                </a>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-outline-primary d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="me-2">Más acciones</span>
+                    <span class="btn-icon icon-down"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Compras en curso</a></li>
+                    <li><a class="dropdown-item" href="#">Enviado a Mty</a></li>
+                    <li><a class="dropdown-item" href="#">Proceso de envío</a></li>
+                    <li><a class="dropdown-item" href="#" class="">Eliminar lista</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="row gx-2 gy-0">
@@ -81,15 +85,15 @@
               <div class="col-2">
                 <div class="side-grid">
                   <div class="d-grid pb-2">
-                    <a href="add-list.html" class="btn btn-lg btn-outline-primary d-flex align-items-center justify-content-center">
+                    <a href="#" class="btn btn-lg btn-outline-primary d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#add-product-list">
                       <span class="me-2">Agregar producto</span>
                       <span class="btn-icon pinkColor icon-agregar"></span>
                     </a>
                   </div>
                   <div class="grid-card-side mb-2">
-                    <div class="d-flex p-3 justify-content-between border-bottom">
+                    <div class="d-flex flex-column p-3 justify-content-between border-bottom">
                       <span class="title">Estado</span>
-                      <span class="badge text-bg-success">Activa</span>
+                      <span class="badge text-bg-success mt-2">Compras en curso</span>
                     </div>
                     <div class="d-flex p-3 justify-content-between">
                       <span class="title-b">Total:</span>
@@ -128,12 +132,30 @@
       </div>
     </div>
 <!-- Modal -->
+ <!-- Modal editar articulo -->
+<div class="modal fade" id="add-product-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar articulo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-add-product-list"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-dark">Cancelar</button>
+        <button type="submit" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal editar compra -->
 <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar compra</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar articulo</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -156,6 +178,7 @@
     <script type="text/javascript">
       $( "#menu" ).load( "menu.html" );
       $( "#modal-shoplist" ).load( "modal-shoplist.html" );
+      $( "#modal-add-product-list" ).load( "modal-shop-list.html" );
     </script>
   </body>
 </html>

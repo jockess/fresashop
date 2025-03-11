@@ -37,3 +37,6 @@ var table = new Tabulator("#lista-desgl-table", {
     {title:"", field:"button", hozAlign:"right", width:100, headerSort:false},
     ],
 });
+table.on("rowClick", function(e, row){
+    window.location.href = "desgl-cliente.html";
+});

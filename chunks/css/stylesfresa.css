@@ -27,6 +27,8 @@
     --badgeDebt:#FCE7F3;
     --badgeTextDebt:#9D174D;
     --black-rgb: 11, 20, 26;
+    --bgGray:#ebebeb;
+    --textSald:#92400E;
   }
   * {
     scrollbar-width: thin;
@@ -40,6 +42,9 @@
   }
   a{
     text-decoration: none;
+  }
+  .bg-gray{
+    background-color: var(--bgGray);
   }
   .feather {
     width: 16px;
@@ -306,6 +311,14 @@
    .side-grid .title-b{
     font-weight: 600;
    }
+   .side-grid .title-b.saldo{
+    font-weight: 600;
+    color: var(--textSald)!important;
+   }
+   .side-grid .subtitle-b{
+    font-weight: 400;
+    font-size: 10px;
+   }
    .side-grid .badge {
     font-size: 14px;
     font-weight: 500;
@@ -315,6 +328,9 @@
   /*
    * Utilities
    */
+   .dropdown-toggle::after{
+    display: none;
+   }
    .modal-body {
     background-color: var(--bodyColor);
 }
@@ -519,7 +535,7 @@
   background-color: var(--greenHoverColor);
   border-color: var(--greenHoverColor);
 }
-.action-menu  .btn.btn-outline-primary{
+.action-menu  .btn.btn-outline-primary, .side-grid .btn.btn-outline-primary{
   font-weight: 400;
 }
 .action-menu  .btn.btn-outline-primary .btn-icon{

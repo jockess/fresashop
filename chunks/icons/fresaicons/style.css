@@ -24,7 +24,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-comprobante:before {
+  content: "\e916";
+}
+.icon-guia:before {
+  content: "\e917";
+}
+.icon-foto:before {
+  content: "\e918";
+}
 .icon-buscar:before {
   content: "\e900";
 }

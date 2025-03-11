@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="chunks/images/favicon.ico">
+
+    <title>Agregar lista - Fresa Shop</title>
+    <!-- Bootstrap core CSS -->
+    <link href="chunks/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Tables core CSS -->
+    <link href="chunks/tabulator-master/dist/css/tabulator_semanticui.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="chunks/icons/fresaicons/style.css" rel="stylesheet">
+    <link href="chunks/css/stylesfresa.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar sticky-top flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 ps-3 mr-0" href="#"><img src="chunks/images/Logo.png"></a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <div class="nav-link-user">
+            <div class="gravatar me-2">J</div>
+            <div class="name me-2">Jesse Reyes</div>
+            <div class="dropdown">
+              <a href="#" class="menuburger"><span class="icon-menu"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+          <div class="sidebar-sticky">
+            <div id='menu'></div>
+          </div>
+        </nav>
+
+        <main role="main" class="shop-list col">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="row ps-4 pe-2 pt-4 pb-4">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                  <div class="main-title ">
+                    <a href="desgl-cliente.html" class="btn btn-back btn-outline-primary d-flex align-items-center justify-content-center">
+                      <span class="icon-down"></span>
+                    </a>
+                    <div class="main-text ms-2 d-flex align-items-center">
+                      <div class="pe-3">Desglose - Aby Jimenez</div>
+                      <div class="data-text"><span class="pe-2 border-end">Ciclo 1</span><span class="ps-2">Enero</span></div>
+                    </div>
+                  </div>
+                  <div class="action-menu d-flex flex-row gap-2">
+                    <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                      <span class="me-2">Agregar guía</span>
+                      <span class="btn-icon icon-guia"></span>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                      <span class="me-2">Agregar fotos</span>
+                      <span class="btn-icon icon-foto"></span>
+                    </a>
+                    <div class="dropdown">
+                      <a href="#" class="btn btn-outline-primary d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="me-2">Más acciones</span>
+                        <span class="btn-icon icon-down"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row gx-2 gy-0">
+                  <div class="col-9">
+                    <div id="lista-compras-table"></div>
+                    <div class="grid-card mt-3"></div>
+                  </div>
+                  <div class="col-3">
+                    <div class="side-grid">
+                      <div class="d-grid pb-2">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#addproduct" class="btn btn-lg btn-outline-primary d-flex align-items-center justify-content-center">
+                          <span class="me-2">Agregar producto</span>
+                          <span class="btn-icon pinkColor icon-agregar"></span>
+                        </a>
+                      </div>
+                      <div class="grid-card-side mb-2">
+                        <div class="d-flex p-3 justify-content-between border-bottom">
+                          <span class="title">Estado</span>
+                          <span class="badge text-bg-success">Activa</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between bg-gray">
+                          <span class="title-b">Total:</span>
+                          <span class="text">$43,670</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between">
+                          <div class="d-flex flex-column">
+                            <span class="title-b">Abono:</span>
+                            <span class="subtitle-b"> 12 de Enero 2025</span>
+                          </div>
+                          <span class="text">$3,670</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between">
+                          <div class="d-flex flex-column">
+                            <span class="title-b">Envio:</span>
+                            <span class="subtitle-b"> 12 de Enero 2025</span>
+                          </div>
+                          <span class="text">$670</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between">
+                          <span class="title-b">Subtotal:</span>
+                          <span class="text">$40,670</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between">
+                          <span class="title-b saldo">Saldo:</span>
+                          <span class="text">$41,340</span>
+                        </div>
+                        <div class="d-flex p-2 justify-content-between border-top">
+                          <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                            <span class="me-2">Abono</span>
+                            <span class="btn-icon icon-pagos"></span>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary d-flex align-items-center">
+                            <span class="me-2">Envío</span>
+                            <span class="btn-icon icon-envios"></span>
+                          </a>
+                        </div>
+                        <div class="d-flex p-3 justify-content-between border-top">
+                          <span class="title">Guías</span>
+                          <span class="text"></span>
+                        </div>
+                        <div class="d-flex p-3 justify-content-between border-top">
+                          <span class="title">Fotos</span>
+                          <span class="text"></span>
+                        </div>
+                      </div>
+                      <div class="grid-card-side">
+                        <div class="d-flex p-3 justify-content-between border-bottom">
+                          <span class="title">Articulos</span>
+                          <span class="text">40</span>
+                        </div>
+                        <div class="d-flex flex-column p-3 justify-content-between border-bottom">
+                          <span class="title">Ultima actualización</span>
+                          <span class="text">12/01/2025</span>
+                        </div>
+                        <div class="d-flex p-3 justify-content-between ">
+                          <span class="title">Canal</span>
+                          <span class="text">Monterrey</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+<!-- Modal -->
+<!-- Modal editar compra -->
+<div class="modal fade" id="editproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar articulo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-editproduct"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-dark">Cancelar</button>
+        <button type="submit" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal editar compra -->
+<div class="modal fade" id="addproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar articulo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-addproduct"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-outline-dark">Cancelar</button>
+        <button type="submit" class="btn btn-secondary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Bootstrap core JavaScript================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="chunks/tabulator-master/dist/js/tabulator.js"></script>
+    <script type="text/javascript" src="chunks/js/desgl-cliente.js"></script>
+    <script type="text/javascript">
+      $( "#menu" ).load( "menu.html" );
+      $( "#modal-editproduct" ).load( "modal-edit-product.html" );
+      $( "#modal-addproduct" ).load( "modal-add-product.html" );
+    </script>
+  </body>
+</html>
